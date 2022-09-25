@@ -1,0 +1,11 @@
+﻿@model RoutingNavigation.Areas.User.Models.UserLoginViewModel
+
+@{
+    ViewData["Title"] = "User Dashboard";
+    Layout = "~/Areas/User/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="text-center">
+    <h1> User Dashboard</h1>
+<h6>Welcome @TempData.Peek("UserName").ToString()</h6>
+</div>
